@@ -139,7 +139,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -527,9 +527,9 @@
   //#define DEFAULT_Kd 440
 
   // Anycubic Kossel - run 'M106 S255' & 'M303 E0 C10 S200'
-  #define DEFAULT_Kp 22.36
-  #define DEFAULT_Ki 1.63
-  #define DEFAULT_Kd 76.48
+  #define DEFAULT_Kp 19.27
+  #define DEFAULT_Ki 1.27
+  #define DEFAULT_Kd 73.35
 
 #endif // PIDTEMP
 
@@ -575,10 +575,10 @@
     #define DEFAULT_bedKi 72.47
     #define DEFAULT_bedKd 482.59
   #elif ANYCUBIC_KOSSEL_ENABLE_BED == 2
-    // TODO get real PID values for Ultrabase Bed
-    #define DEFAULT_bedKp 374.03
-    #define DEFAULT_bedKi 72.47
-    #define DEFAULT_bedKd 482.59
+    // real PID values for ReliaBot Glass Bed
+    #define DEFAULT_bedKp 212.72
+    #define DEFAULT_bedKi 42.50
+    #define DEFAULT_bedKd 709.78
   #endif
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
